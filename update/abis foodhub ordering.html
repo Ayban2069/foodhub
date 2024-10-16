@@ -68,7 +68,7 @@
                 <span class="tooltip">Info</span>
             </li>
             <li>
-                <a href="#Info">
+                <a href="#Info" onclick="logOut()">
                     <i class="bx bx-log-out-circle"></i>
                     <span class="nav-item">Log out</span>
                 </a>
@@ -731,6 +731,10 @@
         let sidebar = document.querySelector('.sidebar'); // Correct selection
         btn.onclick = function () {
             sidebar.classList.toggle('active');
+        }
+
+        function logOut() {
+            window.location.href = 'login.html'; 
         }
     </script>
     <script src="/bootstrap.min.js"></script>
